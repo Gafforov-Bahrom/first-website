@@ -1,0 +1,123 @@
+
+
+.card{
+    margin-right: 200px;
+    margin-left: 200px;
+}
+
+.height{
+    height: 100px;
+}
+
+.content{
+    font-size: 18px;
+    line-height: 24px;
+    font-family: robotoRegular;
+    color: #2D2D2D;
+    width: 1000px;
+}
+
+.avatar{
+    display: flex;
+}
+
+.dflex{
+    display: flex;
+}
+
+h1{
+    font-family: robotoBold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 32px;
+}
+
+h2{
+    font-family: robotoBold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+p{
+    font-family: robotoRegular;
+}
+
+.left{
+    margin-left: 24px;
+}
+
+.right{
+    margin-right: 22px;
+}
+
+.top{
+    margin-top: 24px;
+}
+
+.bottom{
+    margin-bottom: 24px;
+}
+
+.mt{
+    margin-top: 8px;
+}
+.textGrey{
+    color: #728D9F;
+    font-size: 16px;
+    line-height: 24px;
+}
+.ml{
+    margin-left: 8px;
+}
+
+@media screen and (max-width: 1800px) {
+    .avatar{
+        display: block;
+    }
+    .card{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }   
+}
+
+@media screen and (max-width: 1450px) {
+    .card{
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .card{
+        margin-left: 20 px;
+        margin-right: 100px;
+    }
+}
+
+@media screen and (max-width: 1180px) {
+    .bigImage{
+        width: 100%;
+    }
+    .top{
+        width: 100%;
+    }
+    .left{
+        margin-left: 0;
+    }
+    h2{
+        font-size: 14px;
+    }
+    .textGrey{
+        font-size: 12px;
+        
+    }
+    .widthText{
+        width: 100px;
+    }
+    
+    .height{margin-bottom: 100px;}
+}

@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    font-family: robotoBold;
+}
+h2{
+    font-family: robotoBold;
+}
+a{
+    font-family: robotoRegular;
+}
+
+header a{
+    text-decoration: none;
+    color: black;
+}
+
+header ul{
+    /* display: inline; */
+    list-style-type: none;
+    padding: 0;
+    /* display: flex; */
+}
+
+header ul li{
+    display: inline-block;
+    margin-left: 20px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 200px;
+    position: relative;
+}
+
+header button{
+    margin-top: -15px;
+    padding: 10px 20px;
+    font-size: 20px;
+    color: white;
+    background-color: blue;
+    border-radius: 5px;
+    border: 0;
+}
+
+.logo-header{
+    margin-top: -15px;
+}
+
+.burger{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+    padding: 5px 7px;
+    color: white;
+    background-color: blueviolet;
+}
+
+
+
+@media (min-width: 1250px) and (max-width: 1450px) {
+    header{
+        margin: 20px 100px;
+    }
+    .logo-header img{
+        width: 120px;
+    }
+    header button{
+        padding: 5px 10px;
+        height: 45px !important;
+    }
+    .topnav{
+        margin-top: 0px;
+    }
+}
+
+@media (min-width: 1080px) and (max-width: 1250px){
+    header{
+        margin: 20px 20px;
+    }
+    .logo-header img{
+        /* margin-top: 10px; */
+        width: 120px;
+    }
+    header button{
+        margin-top: -10px;
+        padding: 4px 8px;
+        height: 45px !important;
+        /* margin-left: auto; */
+    }
+    .topnav{
+        margin-top: 5px;
+    }
+}
+
+@media screen and (max-width: 1080px){
+    header{
+        margin: 20px 0px;
+    }
+    .logo-header{
+        margin-left: 70px;
+       
+    }
+    header .burger{
+        margin-left: 20px;
+        margin-top: -5px;
+        display: block;
+    }
+    ul li{
+        display: block !important;
+        margin-top: 5px;
+    }
+    ul li a{
+        font-size: 16px !important;
+        color: white;
+        transition: all 0.5s linear;
+    }
+
+    ul li a:hover{
+        color: lightblue;
+        
+    }
+
+    header button{
+        /* margin-top: 0px; */
+        height: 45px !important;
+        margin-left: auto;
+        margin-right: 20px;
+    }
+    .topnav {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 60vh;
+        position: fixed;
+        top: 30px;
+        left: -100%;
+        opacity: 1;
+        transition: all 0.5s ease;  
+      }
+    
+      .topnav.active {
+        background: rgba( 0 , 0 , 23 , 0.8);
+        left: 0;
+        opacity: 1;
+        transition: all 0.5s linear;
+        z-index: 1;
+      }
+}
+

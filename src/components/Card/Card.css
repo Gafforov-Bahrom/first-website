@@ -1,0 +1,242 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-family: robotoBold;
+}
+h2{
+    font-family: robotoBold;
+}
+a{
+    font-family: robotoRegular;
+}
+
+
+
+main{
+    margin-right: 200px;
+    margin-left: 200px;
+    margin-top: 16px;
+    margin-bottom: 125px;
+}
+
+.change{
+    padding: 10px 20px;
+    background-color: white;
+    border: 1px solid blue;
+    margin-right: 10px;
+    color: blue;
+    transition: all 0.3s linear;
+}
+
+.change:hover{
+    background-color: blue;
+    color: white;
+    border: 1px solid transparent;
+}
+
+
+.card{
+    display: flex;
+    margin-top: 48px;
+    position: relative;
+}
+
+.text-grey{
+    color: #AEBEC9;
+}
+
+.card h1{
+    font-size: 36px;
+    line-height: 42px;
+    font-family: 'robotoBold';
+    margin-bottom: 24px;
+}
+
+.card .content{
+    margin-top: 24px;
+    font-size: 18px;
+    line-height: 32px;
+    color: #555555;
+    font-family: 'robotoRegular';
+    /* height: 128px; */
+}
+
+.card-body{
+    margin-left: 24px;
+}
+
+.card-button{
+    display: block;
+    margin-top: 24px;
+    padding: 12px 32px;
+    background-color: #1B5BF7;
+    border-radius: 5px;
+    border: 1px solid transparent;
+}
+
+.card-button a{
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 24px;
+    color: white;
+}
+
+.card-link{
+    color: #1B5BF7;
+    text-decoration: none;
+    margin-left: 42px;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.eye{
+    margin-top: 1px;
+    margin-left: 10px;
+    margin-right: 3px;
+}
+
+.active {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.active .card{
+    width: 33%;
+    margin-bottom: 36px;
+    display: block;
+}
+
+.active .card h1{
+    min-height: 168px;
+}
+
+.active .card-body{
+    margin-left: 0;
+}
+
+.active .big{
+    width: 100%;
+}
+
+.active .content{
+    display: none;
+}
+
+.active .card-button{
+    margin-top: 10px;
+    
+}
+
+@media (min-width: 1250px) and (max-width: 1450px) {
+    main{
+        margin-left: 100px;
+    }
+
+    .big{
+        width: 500px;
+    }
+    .active .card{
+        width: 48%;
+        margin-left: 5px;
+    }
+}
+
+@media (min-width: 1080px) and (max-width: 1250px){
+    main{
+        /* margin-left: 100px;
+        padding-right: 100px; */
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .card{
+        display: block;
+        width: calc(90%);
+    }
+
+    .active .card{
+        width: 100%;
+    }
+
+    .big{
+        width: calc(95%) !important;
+    }
+}
+
+@media screen and (max-width: 1080px){
+    main{
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .card{
+        display: block;
+        text-align: center;
+        width: calc(90%);
+    }
+
+    .card-body{
+        min-width: 375px;
+        margin: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .card-body h1{
+        font-size: 24px !important;
+    }
+
+    .active .card{
+        width: 100%;
+    }
+
+    /* .big{
+        width: 300px;
+    } */
+    .big{
+        width: calc(100%) !important;
+    }
+    .card-button , .active .card-button{
+        margin: 24px auto;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    main{
+        margin-top: 0;
+        margin-right: 0;
+        overflow: hidden;
+        margin-left: -110px;
+    }
+    .card , .active .card{
+        display: block;
+        width: 95%;
+    }
+
+    .card-body h1{
+        font-size: 20px !important;
+    }
+
+    .active .card{
+        display: block;
+        width: 95%;
+    }
+
+    .content{
+        width: 350px;
+    }
+
+    .card-button , .active .card-button{
+        margin: 24px auto;
+    }
+}
+
