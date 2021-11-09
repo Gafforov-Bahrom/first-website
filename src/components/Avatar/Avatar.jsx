@@ -12,9 +12,11 @@ const Avatar = () => {
                     <div className={`${cls.left}`}>
                         <h1>Дилором Алиева</h1>
                         <table className={cls.customers}>
+                            <tbody>
                             <tr><td>Карьера</td><td>Писатель</td></tr>
                             <tr><td>Дата рождения</td><td>2 ноября, 1974  ( 46 лет)</td></tr>
                             <tr><td>Место рождения</td><td>Черняховск, СССР (Россия)</td></tr>
+                            </tbody>
                         </table>
 
                     </div>    

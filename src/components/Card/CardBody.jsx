@@ -1,5 +1,5 @@
 import React from 'react';
-import Data from '../../data';
+// import Data from '../../data';
 import cardBody from '../../images/cardbody-1.png'
 import sm1 from '../../images/cardsm-1.png'
 import sm2 from '../../images/cardsm-2.png'
